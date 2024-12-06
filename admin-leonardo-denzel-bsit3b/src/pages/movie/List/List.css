@@ -1,0 +1,122 @@
+body {
+    background-color: #0e0e0e;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.movie-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 3px solid #0072e5;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #0072e5;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0072e5;
+    color: #ffffff;
+}
+
+.outlet {
+    background-color: #1d1c1b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie-lists {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+}
+
+.movie-lists th, .movie-lists td {
+    text-align: center;
+    padding: 15px;
+   
+    margin: 0 10px;
+}
+
+.movie-lists th {
+    padding: 15px 20px;
+}
+
+.movie-lists td {
+    padding: 15px 20px;
+}
+
+button {
+    margin: 10px;
+    background-color: #0072e5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button-container button {
+    width: 1880px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}

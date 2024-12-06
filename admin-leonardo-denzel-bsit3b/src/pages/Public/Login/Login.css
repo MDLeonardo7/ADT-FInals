@@ -1,0 +1,156 @@
+.login-page {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.login-page-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 400px;
+  height: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+h3 {
+  color: #4a90e2; 
+  font-size: 24px; 
+  font-weight: bold; 
+  margin-bottom: 1.5rem; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.login-page-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-page-form-container > div {
+  margin-bottom: 1rem;
+}
+
+
+.login-page-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page-form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-page-form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-page-form-group input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 6px rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+
+
+.login-page-errors {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+
+.login-page-show-password {
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.login-page-show-password:hover {
+  color: #1a73e8;
+}
+
+
+.login-page-header h3 {
+  color: #4a90e2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+
+.login-page-submit-container .btn-primary {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-page-submit-container .btn-primary:hover {
+  background-color: #1a73e8;
+  transform: scale(1.02);
+}
+
+.login-page-submit-container .btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.login-page-register-container {
+  margin-top: 1rem;
+  font-size: 12px;
+  text-align: right;
+}
+
+.login-page-register-container small {
+  color: #555;
+}
+
+.login-page-register-container a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.login-page-register-container a:hover {
+  color: #1a73e8;
+}
