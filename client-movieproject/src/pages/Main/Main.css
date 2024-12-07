@@ -1,0 +1,56 @@
+.Main .container .navigation {
+  height: 80px;
+  background-color: #1c1c1c;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+
+.Main .container .navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.Main .container .navigation ul li {
+  padding: 0 30px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #61dafb;
+  font-weight: bold;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.Main .container .navigation ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Main .container .navigation ul li.active a,
+.Main .container .navigation ul li:hover a {
+  color: #ffffff;
+}
+
+.Main .container .navigation ul li.active,
+.Main .container .navigation ul li:hover {
+  background: rgba(53, 58, 67, 0.8);
+  border-radius: 5px;
+}
+
+.Main .container .navigation ul li.logout,
+.Main .container .navigation ul li.login {
+  cursor: pointer;
+  justify-self: end;
+}
